@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Demo from "./pages/Demo";
 import ErrorPage from "./pages/ErrorPage";
@@ -28,10 +28,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      {/* <RouterProvider router={router} /> */}
-      <BrowserRouter>
+      <RouterProvider router={router} />
+      {/* <BrowserRouter>
         <Demo />
-      </BrowserRouter>
+      </BrowserRouter> */}
     </QueryClientProvider>
   </React.StrictMode>
 );
