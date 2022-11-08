@@ -1,0 +1,49 @@
+:root {
+  --corner-radius-small: 0.4rem;
+  --corner-radius-medium: 0.8rem;
+  --corner-radius-large: 1.6rem;
+  --corner-radius-xlarge: 2.4rem;
+  --corner-radius-full: 50%;
+}
+.feedpage {
+  background-color: antiquewhite;
+  min-height: 100vh;
+}
+.navbar {
+  background-color: #fff;
+  /* height: 4rem; */
+  left: 0;
+  padding: 0 2.4rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.maincontainer {
+  /* background-color: #fff; */
+  margin: 2.4rem 0;
+  display: grid;
+  place-content: center;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 12fr) minmax(300px, 7fr);
+  grid-template-rows: auto;
+  grid-area: content;
+  grid-template-areas:
+    "leftside"
+    "feed"
+    "rightside";
+  margin-left: auto;
+  margin-right: auto;
+  width: min(95%, 70rem);
+}
+.feedcontainer {
+  background-color: rgb(137, 158, 241);
+  border: black solid;
+  /* border-radius: var(--corner-radius-medium) !important; */
+  height: 10rem;
+}
+.rightsidebar {
+  background-color: rgb(247, 155, 236);
+  border: rgb(0, 255, 26) solid;
+}

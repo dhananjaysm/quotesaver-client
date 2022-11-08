@@ -1,0 +1,110 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+}
+.linkedin_logo {
+  margin: 0 0.4rem 0 -0.4rem;
+}
+.linkedin_icon {
+  color: #0a66c2;
+  /* width: 4.1rem; */
+  /* height: 4.1rem; */
+}
+.searchbox {
+  /* position: relative; */
+  /* display: block; */
+  flex-grow: 1;
+  max-width: 280px;
+  z-index: 100;
+}
+.searchbox_div {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.searchbox_input {
+  /* width: 100%; */
+  line-height: 1.75;
+  font-weight: 400;
+  font-size: 14px;
+  height: 34px;
+  background-color: #eef3f8;
+  border-radius: var(--corner-radius-small);
+  color: black;
+  border: none;
+  padding: 0 0.8rem 0 40px;
+}
+.searchbox_input:focus {
+  outline: auto -webkit-focus-ring-color;
+}
+.searchbox_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.8rem 0.8rem 0.8rem 1.6rem;
+  border-radius: 0 2px 2px 0;
+  width: 40px;
+  height: 34px;
+  margin: 0;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_links {
+  display: block;
+  min-height: 52px;
+  margin-left: auto;
+  /* margin-inline: auto; */
+  margin: 0;
+  padding: 0;
+}
+.primary_links {
+  display: flex;
+  list-style: none;
+
+  margin: 0;
+  flex-wrap: nowrap;
+  vertical-align: baseline;
+  padding: 0.25rem 0;
+  /* align-items: flex-start; */
+  /* margin-inline: auto; */
+}
+.primary_nav_link {
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+
+  font-size: 100%;
+  vertical-align: baseline;
+
+  /* min-height: 52px; */
+  min-width: 80px;
+  /* position: relative; */
+  /* line-height: 1.5; */
+  text-decoration: none;
+}
+.single_link {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+.single_link_icon {
+  font-size: large;
+  margin: 0;
+  padding: 0;
+}
+.single_link span {
+  font-size: small;
+  padding: 0;
+  margin: 0;
+}

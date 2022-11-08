@@ -1,0 +1,72 @@
+:root {
+  --corner-radius-small: 0.4rem;
+  --corner-radius-medium: 0.8rem;
+  --corner-radius-large: 1.6rem;
+  --corner-radius-xlarge: 2.4rem;
+  --corner-radius-full: 50%;
+
+  --card-padding-small: 0.5rem;
+  --profile_banner_img: url("https://static-exp1.licdn.com/sc/h/55k1z8997gh8dwtihm11aajyq");
+}
+.profile a {
+  text-decoration: none;
+}
+.profile {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--corner-radius-small);
+}
+.profile_info,
+.connections,
+.premium_ad,
+.profile_myitems {
+  padding: 1.2rem 1.2rem 1.6rem;
+}
+.profile_info {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.profile_banner {
+  background-position: center;
+  background-size: cover;
+  display: block;
+  height: 56.25px;
+  margin: -1.2rem -1.2rem 0;
+  background-image: var(--profile_banner_img);
+}
+
+.profile_img {
+  margin: -38px auto 1.2rem;
+
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: var(--corner-radius-full) !important;
+  /* aspect-ratio: auto 64 / 64; */
+  width: 72px;
+  height: 72px;
+  box-sizing: border-box;
+  background-clip: content-box;
+  /* border: 1px solid transparent; */
+  /* border-radius: 50%; */
+}
+.user_name {
+  display: block;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.user_job {
+  margin-top: 4px !important;
+  color: rgba(0, 0, 0, 8);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.break-words {
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}

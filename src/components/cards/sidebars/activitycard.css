@@ -1,0 +1,23 @@
+:root {
+  --corner-radius-small: 0.4rem;
+  --corner-radius-medium: 0.8rem;
+  --corner-radius-large: 1.6rem;
+  --corner-radius-xlarge: 2.4rem;
+  --corner-radius-full: 50%;
+}
+.activitycontainer a {
+  text-decoration: none;
+}
+.activitycontainer ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+.activitycontainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--corner-radius-small);
+}
